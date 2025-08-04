@@ -1,0 +1,70 @@
+/* App.css o PanelAdmin.css */
+
+.panel-admin {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ff0202;
+  min-height: 100vh;
+}
+
+.panel-admin h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgb(218, 29, 29);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #44749d;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #0f66b3;
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-panel input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.login-panel button {
+  padding: 0.6rem 1rem;
+  background-color: #44749d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-panel button:hover {
+  background-color: #355c7d;
+}
