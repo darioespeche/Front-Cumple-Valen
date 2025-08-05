@@ -17,8 +17,9 @@ function PanelAdmin() {
   };
 
   useEffect(() => {
+    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
     if (accesoConcedido) {
-      fetch("http://localhost:5000/api/participantes")
+      fetch(`${BACKEND_URL}/api/participantes`)
         .then((res) => res.json())
         .then((data) => setDatos(data))
         .catch((err) => console.error("Error al cargar datos", err));
