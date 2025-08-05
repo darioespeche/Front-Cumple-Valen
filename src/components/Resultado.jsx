@@ -1,4 +1,5 @@
 import { preguntas } from "../data/preguntas";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 import { useEffect } from "react";
 
@@ -15,20 +16,17 @@ function Resultado({ nombre, puntaje, respuestas }) {
   useEffect(() => {
     const enviarDatos = async () => {
       try {
-        await fetch(
-          "https://backend-cumplevalen.onrender.com/api/participantes",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              nombre,
-              puntaje,
-              respuestas,
-            }),
-          }
-        );
+        await fetch(`${BACKEND_URL}/api/participantes`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            nombre,
+            puntaje,
+            respuestas,
+          }),
+        });
         console.log("✅ Datos enviados al backend");
       } catch (error) {
         console.error("❌ Error al enviar los datos:", error);
