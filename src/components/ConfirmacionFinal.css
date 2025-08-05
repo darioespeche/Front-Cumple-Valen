@@ -1,0 +1,51 @@
+.confirmacion-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #00ffcc;
+  text-align: center;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.robot-ia {
+  width: 180px;
+  margin-bottom: 20px;
+  animation: flotar 2s ease-in-out infinite;
+}
+
+.mensaje-final p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

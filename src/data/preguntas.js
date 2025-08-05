@@ -1,17 +1,27 @@
 export const preguntas = [
   {
-    texto: "¿Cuál es la comida favorita de Valen?",
-    opciones: ["Pizza", "Tacos", "Empanadas", "Sushi"],
+    texto: "¿Cuál es el color favorito de Valen?",
+    opciones: ["Rojo", "Azul", "Verde", "Amarillo"],
+    correcta: "Azul",
+  },
+  {
+    texto: "¿Qué comida le encanta?",
+    opciones: ["Pizza", "Empanadas", "Sushi", "Hamburguesas"],
     correcta: "Empanadas",
   },
   {
-    texto: "¿Qué música la hace bailar sí o sí?",
-    opciones: ["Cumbia", "Rock", "Trap", "Reggaetón"],
-    correcta: "Reggaetón",
+    texto: "¿Cuál es su banda favorita?",
+    opciones: ["Coldplay", "BTS", "Queen", "Los Redondos"],
+    correcta: "Coldplay",
   },
   {
-    texto: "¿Cómo le decían en la primaria?",
-    opciones: ["Vale", "Chiqui", "Chispa", "Vala"],
-    correcta: "Chiqui",
+    texto: "¿Qué deporte practica?",
+    opciones: ["Fútbol", "Natación", "Ciclismo", "Tenis"],
+    correcta: "Fútbol",
+  },
+  {
+    texto: "¿Qué instrumento le gustaría aprender?",
+    opciones: ["Guitarra", "Piano", "Batería", "Violín"],
+    correcta: "Piano",
   },
 ];

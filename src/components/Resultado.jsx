@@ -1,5 +1,6 @@
 import { preguntas } from "../data/preguntas";
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+import "./Resultado.css";
 
 import { useEffect } from "react";
 
@@ -38,11 +39,34 @@ function Resultado({ nombre, puntaje, respuestas }) {
 
   return (
     <div className="resultado">
-      <h2>Resultado final</h2>
-      <p>{mensajeFinal}</p>
+      <h2>🎉 ¡Estás invitado! 🎉</h2>
 
-      <h3>Tus respuestas:</h3>
-      <ul>
+      <p className="mensaje-final">{mensajeFinal}</p>
+
+      <div className="detalles-fiesta">
+        <h3>🗓️ Detalles del evento:</h3>
+        <p>
+          <strong>📍 Lugar:</strong> Salón Luna, Av. Principal 123
+        </p>
+        <p>
+          <strong>🕒 Fecha:</strong> Sábado 20 de septiembre, 21:00 hs
+        </p>
+        <p>
+          <strong>🎽 Dresscode:</strong> Ropa elegante pero cómoda 😉
+        </p>
+      </div>
+
+      <a
+        href={`https://wa.me/549XXXXXXXXXX?text=Hola! Soy ${nombre}, confirmo que voy al cumple de Valen 🎉`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-whatsapp"
+      >
+        ✅ Confirmar asistencia por WhatsApp
+      </a>
+
+      <h3>🧠 Tus respuestas:</h3>
+      <ul className="respuestas">
         {respuestas.map((r, idx) => (
           <li key={idx}>
             <strong>{r.pregunta}</strong>

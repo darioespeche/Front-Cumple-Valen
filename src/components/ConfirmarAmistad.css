@@ -1,0 +1,85 @@
+.confirmar-amistad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at center, #111, #000);
+  color: #00ffcc;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 20px;
+  animation: aparecer 1s ease-in-out;
+}
+
+.robot-ia {
+  width: 160px;
+  animation: flotar 2s ease-in-out infinite;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.mensaje-amistad {
+  background-color: #111;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 25px #00ffccaa;
+  max-width: 500px;
+  width: 90%;
+  animation: aparecer 1.5s ease-in-out;
+}
+
+.mensaje-amistad p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.opciones {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opciones button {
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.opciones button:hover {
+  transform: scale(1.05);
+  background-color: #00ccaa;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

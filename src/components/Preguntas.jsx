@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { preguntas } from "../data/preguntas";
+import "./Preguntas.css";
 
 function Preguntas({ onFinalizar }) {
   const [indice, setIndice] = useState(0);
