@@ -7,3 +7,8 @@
   background-color: black;
   z-index: 9999;
 }
+@media (max-width: 7680px) {
+  .pantalla-matrix {
+    justify-content: center;
+  }
+}

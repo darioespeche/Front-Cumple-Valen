@@ -85,3 +85,38 @@ button:hover {
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .bienvenida {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .robot-ia {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+
+  .pantalla-ia {
+    padding: 25px 15px;
+    width: 90%;
+    box-shadow: 0 0 10px #00ffcc;
+    margin: 0 auto;
+  }
+
+  .mensaje {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 90%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

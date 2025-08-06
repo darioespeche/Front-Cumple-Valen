@@ -4,11 +4,9 @@ import robotGif2 from "../assets/robot2.gif";
 
 function ConfirmarAmistad({ nombre, onRespuesta }) {
   const partes = [
-    `Genial, ${nombre}! Justo te estaba buscando...`,
-    `Valen me habló mucho de vos.`,
-    `Pero antes de decirte dónde será la fiesta, necesito hacerte una pregunta...`,
-    `Valen me dijo que sos uno de sus amigos más importantes.`,
-    `¿Vos también lo sentís así?`,
+    `Valen me habló mucho de vos. Me dijo que sos una gran amistad`,
+    `Antes de decirte dónde será la fiesta, tengo una pregunta para vos...`,
+    `¿Vos también sentis que Valen es un gran amigo?`,
   ];
 
   const [index, setIndex] = useState(0);
@@ -16,6 +14,7 @@ function ConfirmarAmistad({ nombre, onRespuesta }) {
 
   useEffect(() => {
     if (index < partes.length) {
+      window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(partes[index]);
       utter.lang = "es-AR";
       utter.rate = 1.1;
@@ -32,10 +31,7 @@ function ConfirmarAmistad({ nombre, onRespuesta }) {
     }
   }, [index]);
 
-  const opciones = [
-    "Sí, ¡es un gran amigo! 💖",
-    "La verdad que no tanto... 😅",
-  ];
+  const opciones = ["Sí, ¡es un gran amigo!💖", "La verdad que no tanto... 😅"];
 
   return (
     <div className="confirmar-amistad">

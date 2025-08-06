@@ -14,8 +14,7 @@ function Bienvenida({ onComenzar }) {
   const [mensajes, setMensajes] = useState([
     "Desbloqueando acceso confidencial...",
     "Iniciando protocolo de cumpleaños ",
-    "Escaneando invitados destacados...",
-    "¡Uy! ¡Te encontré! ",
+    "Escaneando invitados destacados...¡Te encontré! ",
     "Soy Botsi, el asistente personal de Valen.",
     "Antes de seguir, ¿cómo te llamás?",
   ]);

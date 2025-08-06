@@ -11,6 +11,7 @@
   text-align: center;
   padding: 20px;
   animation: aparecer 1s ease-in-out;
+  box-sizing: border-box;
 }
 
 .robot-ia {
@@ -29,12 +30,14 @@
   max-width: 500px;
   width: 90%;
   animation: aparecer 1.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .mensaje-amistad p {
   margin: 10px 0;
   font-size: 1.2rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 .opciones {
@@ -81,5 +84,43 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .confirmar-amistad {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .robot-ia {
+    width: 130px;
+    margin-bottom: 20px;
+  }
+
+  .mensaje-amistad {
+    padding: 25px 15px;
+    width: 80%;
+    box-shadow: 0 0 10px #00ffcc;
+    margin: 0 auto;
+  }
+
+  .mensaje-amistad p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .opciones {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .opciones button {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
   }
 }

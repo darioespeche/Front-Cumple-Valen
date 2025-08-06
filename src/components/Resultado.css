@@ -1,4 +1,6 @@
 .resultado {
+  display: flex;
+  flex-direction: column;
   background: #0d0d0d;
   color: #00ffcc;
   padding: 40px;
@@ -7,6 +9,7 @@
   width: 100vw;
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .mensaje-final {
@@ -37,4 +40,15 @@
 .btn-whatsapp:hover {
   transform: scale(1.05);
   background-color: #1ebc5c;
+}
+
+@media (max-width: 768px) {
+  .resultado {
+    padding: 10px;
+    justify-content: center;
+  }
+  .mensaje-final {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 }
